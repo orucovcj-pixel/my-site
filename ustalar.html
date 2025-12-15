@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="az"> 
+<head>
+  <meta charset="UTF-8">
+  <title>Buton Hover Səsi</title>
+</head>
+<body>
+    <a> href= "siqnal.html"
+  <button id="myButton">siqnal</button>
+
+  <script>
+    // 1. Səs faylını yükləyirik
+    const hoverSound = new Audio('siqnal.mp3');
+
+    // 2. Butonu seçirik
+    const button = document.getElementById('myButton');
+
+    // 3. Maus butonun üzərinə gəldikdə səsi çalırıq
+    button.addEventListener('mouseenter', () => {
+      hoverSound.play();
+    });
+  </script>
+</body>
+</html> 
+</a>
